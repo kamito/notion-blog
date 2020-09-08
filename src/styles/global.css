@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Shadows+Into+Light&display=swap);
+
 :root {
   --gap-quarter: 0.25rem;
   --gap-half: 0.5rem;
@@ -13,9 +15,9 @@
 
   --radius: 8px;
 
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  --font-sans: -apple-system, 'Noto Sans', BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   --font-mono: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -28,7 +30,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 body {
@@ -37,12 +39,6 @@ body {
   color: var(--fg);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
-  background-image: radial-gradient(#ddd 1px, transparent 1px),
-    radial-gradient(#ddd 1px, transparent 1px);
-  background-position: 0 0, 25px 25px;
-  background-attachment: fixed;
-  background-size: 50px 50px;
 
   /* Hack */
   overflow-x: hidden;
@@ -252,8 +248,9 @@ figure {
 }
 
 a {
-  color: #0070f3;
+  color: #606060;
   text-decoration: none;
+  cursor: pointer;
 }
 a:hover {
   color: #3291ff;
@@ -308,7 +305,6 @@ h2 {
 p {
   color: #555;
   font-weight: 400;
-  font-size: 0.94rem;
   line-height: 1.7;
 }
 pre {
@@ -360,17 +356,5 @@ code {
 footer {
   padding: 2em 0;
   text-align: center;
-}
-
-footer img {
-  display: block;
-  margin: 0.5rem auto;
-}
-
-footer span:nth-child(3) {
-  color: #777777;
-}
-
-footer span:nth-child(3) a {
-  color: inherit;
+  font-family: 'Shadows Into Light', 'Noto Sans', sans-serif;
 }
