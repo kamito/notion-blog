@@ -360,6 +360,30 @@ const RenderPost = ({ post, redirect, preview }) => {
               }
               break
             }
+            case 'bookmark':
+              const { link, title, description } = properties
+              const { format = {} } = value
+              toRender.push(
+                <div className="bookmark">
+                  <a
+                    href={link}
+                    target="_blank"
+                    style={{
+                      backgroundImage: `url(${format.bookmark_cover})`,
+                    }}
+                  >
+                    <div className="bookmarkDescription">
+                      <label>{title}</label>
+                      <p>{description}</p>
+                      <div className="linkText">
+                        <img src={format.bookmark_icon} />
+                        <span>{link}</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              )
+              break
             case 'quote': {
               if (properties.title) {
                 toRender.push(
