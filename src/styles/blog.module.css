@@ -105,6 +105,7 @@
 }
 
 .post :global(.bookmark) {
+  margin: 16px 0;
   border: 1px solid #37352f29;
   border-radius: 3px;
 }
@@ -119,8 +120,13 @@
   background-blend-mode: lighten;
 }
 
+.post :global(.bookmarkDescription > label) {
+  display: block;
+  margin: 0 0 4px;
+}
+
 .post :global(.bookmarkDescription > p) {
-  margin: 4px 0px;
+  margin: 0 0 4px;
   font-size: 12px;
   color: #909090;
 }

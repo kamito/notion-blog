@@ -373,8 +373,8 @@ const RenderPost = ({ post, redirect, preview }) => {
                     }}
                   >
                     <div className="bookmarkDescription">
-                      <label>{title}</label>
-                      <p>{description}</p>
+                      <label>{title || link}</label>
+                      {description && <p>{description}</p>}
                       <div className="linkText">
                         <img src={format.bookmark_icon} />
                         <span>{link}</span>
